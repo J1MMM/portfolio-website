@@ -17,18 +17,10 @@
   },
   {
     "id": 3,
-    "URL": "https://expo.dev/artifacts/eas/bC9h6MpsHsjWgvTDvaaM5Y.apk",
+    "URL": "https://www.mediafire.com/file/y45umlcnui5uxsa/PPPKids.apk/file",
     "title": "PPPKids",
     "description": "Elevate learning with PPPKids! Fun and educational games for kids to enhance reading, writing, and math skills. Download now for an enriching experience.",
     "image": "pppkids",
-    "sourceUrl": "https://github.com/J1MMM/Online-Food-Ordering-System"
-  },
-  {
-    "id": 4,
-    "URL": "https://jopayskitchen.infinityfreeapp.com",
-    "title": "Jopay's Kitchen",
-    "description": "Jopay's Kitchen: An e-commerce platform simplifying your culinary experience by seamlessly processing customer orders.",
-    "image": "jopay",
     "sourceUrl": "https://github.com/J1MMM/pppkids"
   },
   {
@@ -70,5 +62,13 @@
     "description": "Roll until all dice are the same. Click each die to freeze it at its current value between rolls.",
     "image": "tenzies",
     "sourceUrl": "https://github.com/J1MMM/Tenzies-game.git"
+  },
+  {
+    "id": 4,
+    "URL": "https://jopayskitchen.infinityfreeapp.com",
+    "title": "Jopay's Kitchen",
+    "description": "Jopay's Kitchen: An e-commerce platform simplifying your culinary experience by seamlessly processing customer orders.",
+    "image": "jopay",
+    "sourceUrl": "https://github.com/J1MMM/pppkids"
   }
 ]
