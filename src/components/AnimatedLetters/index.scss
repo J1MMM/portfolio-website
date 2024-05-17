@@ -1,0 +1,30 @@
+$primary-color: #ffd700;
+
+.text-animate{
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+    transition: all .3s ease-out;
+}
+.text-animate-hover{
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+    transition-duration: 500ms;
+    animation-delay: 2s;
+    &:hover{
+        animation: rubberBand 100ms;
+        // color: $primary-color;
+       
+    }
+}
+
+
+
+@for $i from 1 through 35 {
+    .text-animate._#{$i}{
+       animation-delay: #{$i / 10}s;
+    } 
+}

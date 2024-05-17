@@ -1,0 +1,299 @@
+$light-color: #ffd700;
+$dark-color: #181818;
+$secondary-dark-color: #4d4d4e;
+
+.nav-bar{
+    background-color: $dark-color;
+    height: 100%;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    
+    .mobile-nav{
+        position: absolute;
+        right: 0;
+        top: 7rem;
+        height: 0;
+
+        a{
+            display: none;
+        }
+    }
+ 
+    a {
+        &:hover{
+            img{
+                transition-duration: 1s;
+                filter: saturate(1.5)
+            }
+            p{
+                transition-duration: 500ms;
+                color: #ffd700;
+            }
+        }
+    }
+    a>p{
+        color: #fff;
+        font-size: x-small;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        margin-left: 1.5rem;
+
+       
+    }
+    
+    .logo{
+        display: block;
+        width: 4rem;
+        margin-top: 1.5rem;
+        margin-left: .5rem;
+        
+    }
+    nav{
+        display: block;
+        position: absolute;
+        top: 50%;
+        height: 210px;
+        width: 100%;
+        margin-top: -120px;
+        text-align: center;
+        a{
+            display: block;
+            font-size: 22px;
+            color: $secondary-dark-color;
+            line-height: 51px;
+            height: 51px;
+            position: relative;
+            i{
+                transition: all .3s ease-out;
+            }
+            &:hover{
+                color: $light-color;
+        
+                svg{
+                    opacity: 0;
+                }
+                &::after{
+                    opacity: 1;
+                }
+            }
+            &::after{
+                content: "";
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+            &.about-link{
+                &::after{
+                    content: "ABOUT";
+                }
+            }
+            &.skills-link{
+                &::after{
+                    content: "SKILLS";
+                }
+        
+            }
+            &.project-link{
+                &::after{
+                    content: "WORKS";
+                }
+        
+            }
+            &.contact-link{
+                &::after{
+                    content: "CONTACT";
+                    letter-spacing: 1px;
+                }
+        
+            }
+            &.active{
+                svg{
+                    color: $light-color;
+                }
+            }
+        }
+    }
+
+    ul{
+        position: absolute;
+        display: block;
+        list-style: none;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+        li{
+            a{
+                color: $secondary-dark-color;
+                display: block;
+                padding: 7px 0;
+                line-height: 16px;
+                font-size: 17px;
+
+                &:hover > svg{
+                        color: $light-color;
+                }
+            }
+        }
+    }
+    .humburger-icon{
+        display: none;
+    }
+
+    @media screen and (max-width: 1200px){
+        &{
+            min-height: 60px;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo{
+                display: inline;
+                width: 3.5rem;
+                margin-top: 1rem;
+            }
+      
+            a > p{
+                margin-top: 0;
+            }
+            nav{
+                // background-color: #fff;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 15rem;
+                position: static;
+                margin: 0;
+                
+                a{
+                    line-height: 20px;
+                    height: auto;
+                    &::after{
+                        margin-left: -1rem;
+                    }
+                }
+            }
+            
+            ul{
+                width: 10rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                position: static;
+                padding-right: 1rem;
+                // background-color: #ffd700;
+                li{
+                    
+                    margin-left: 1rem;
+                    a{
+                        position: static;
+                        display: contents;
+                    }
+                }
+            }
+            
+        }
+    }
+    @media screen and (max-width: 480px){
+        
+        .logo-cont{
+            width: auto;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 1rem;
+            img, p{
+                margin-left: 0;
+            }
+            p{
+                margin-left: 1rem;
+            }
+            
+        }
+        .humburger-icon{
+            display: block;
+            // background-color: #ffd700;
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+        nav{
+            background-color: #181818;
+            position: absolute;
+            top: 7rem;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            transition-duration: 300ms;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+
+            a{
+                opacity: 0;
+                transition-duration: 0;
+                margin-left: 1rem;
+
+                &::after{
+                    font-size: 14px;
+                    animation: fadeIn 500ms forwards;
+                }
+                svg{
+                    opacity: 0;
+                }
+                &.active{
+                    &::after{
+                        color: #ffd700;
+                    }
+                }
+            }
+
+            &.active{
+                height: 10rem;
+                padding: 2rem;
+                & > a {
+                    opacity: 1;
+                }
+               
+            }
+        }
+        ul{
+            position: absolute;
+            right: 0;
+            bottom: -12rem;
+            display: none;
+
+            & > li{
+                margin-top: 1rem;
+            }
+            &.active{
+                display: flex;
+                opacity: 0;
+                animation: fadeIn 500ms 300ms forwards;
+            }
+        }
+        
+    }
+}
+
