@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faFolderOpen,
   faGear,
+  faHome,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -30,6 +31,15 @@ const Sidebar = () => {
         <p>Jim</p>
       </Link>
       <nav className={NavShow ? "active" : ""}>
+        <NavLink
+          onClick={() => setNavShow(!NavShow)}
+          exact="true"
+          activeclassname="active"
+          className="about-link"
+          to="/"
+        >
+          <FontAwesomeIcon icon={faHome} color="#4d4d4d" />
+        </NavLink>
         <NavLink
           onClick={() => setNavShow(!NavShow)}
           exact="true"

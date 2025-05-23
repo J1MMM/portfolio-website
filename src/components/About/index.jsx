@@ -32,27 +32,23 @@ const About = () => {
             />
           </h1>
           <p className="long-text">
-            I am a versatile full-stack developer with a comprehensive skill set
-            that encompasses HTML, CSS, JavaScript, PHP, React, Angular, React
-            Native, Expo, Node.js, and Express. Over the course of my
-            independent development journey, I have excelled in creating
-            responsive and visually compelling web applications. My proficiency
-            extends to both front-end and back-end development, where I leverage
-            frameworks like React for dynamic user interfaces and Node.js with
-            Express for robust server-side applications.
+            Hi! I'm a passionate Web Developer with a knack for creating
+            dynamic, user-friendly websites and applications. I specialize in
+            modern web technologies like HTML, CSS, JavaScript, and frameworks
+            such as React.js, Node.js, and Express. With a strong eye for design
+            and performance, I love turning complex problems into simple,
+            elegant solutions.
           </p>
           <p className="long-text">
-            In addition to my web development expertise, I have successfully
-            ventured into mobile app development using React Native and Expo,
-            showcasing my commitment to staying at the forefront of
-            cross-platform technologies. I pride myself on my ability to
-            integrate databases seamlessly into applications, ensuring efficient
-            data storage and retrieval. While my professional experiences have
-            primarily been independent projects, I am enthusiastic about
-            transitioning into collaborative team environments, where I can
-            contribute my diverse skill set and passion for innovative
-            development to collective success.
+            Over the years, I’ve built everything from responsive business sites
+            to full-stack web apps, always aiming to deliver seamless user
+            experiences and clean, maintainable code. Whether collaborating in
+            teams or working independently, I value clean architecture,
+            scalability, and staying up-to-date with the latest industry trends.
+            When I’m not coding, you’ll find me exploring new tech, contributing
+            to open-source, or diving into UI/UX design inspirations.
           </p>
+          <p className="long-text">Let’s build something amazing together!</p>
         </div>
         <div className="cube-cont">
           <div className="cube-spinner">
