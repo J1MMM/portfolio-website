@@ -25,6 +25,28 @@ function App() {
         <meta property="og:type" content="website" />
       </Helmet>
 
+      <Helmet>
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jimuel Baraero",
+        "url": "https://jimuelbaraero.vercel.app",
+        "sameAs": [
+          "https://www.linkedin.com/in/jimuelbaraero",
+          "https://github.com/jimuelbaraero"
+        ],
+        "jobTitle": "Web Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "City of Government of San Pablo"
+        }
+      }
+    `}
+        </script>
+      </Helmet>
+
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
