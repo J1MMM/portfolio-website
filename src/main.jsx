@@ -3,11 +3,14 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import { hydrate, render } from "react-dom";
 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
-} else {
-  render(<App />, rootElement);
-}
+const container = document.getElementById("root");
+
+ReactDOM.hydrateRoot(
+  container,
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);

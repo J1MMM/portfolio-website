@@ -8,19 +8,15 @@ import Works from "./components/Works";
 import React from "react";
 function App() {
   return (
-    <React.StrictMode>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="skills" />
-            <Route path="projects" element={<Works />} />
-            <Route path="contact" element={<Contact />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </React.StrictMode>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="skills" />
+        <Route path="projects" element={<Works />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
+    </Routes>
   );
 }
 
