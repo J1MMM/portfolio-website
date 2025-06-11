@@ -79,7 +79,7 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'</span>
             <span className={`${letterClass} _15`}>m</span>
 
-            <img src={LogoJ} alt="logoj" />
+            <img src={LogoJ} alt="J" />
 
             <AnimatedLetters
               letterClass={letterClass}
