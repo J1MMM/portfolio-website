@@ -11,6 +11,13 @@ import { useState, useEffect } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
+import { Helmet } from "react-helmet";
+
+const meta = {
+  title: "About – Jimuel Baraero",
+  description:
+    "Learn more about Jimuel Baraero, a passionate web developer from the Philippines with experience in React, Node.js, and building government systems.",
+};
 
 const About = () => {
   const aboutTitleArray = "About me".split("");
@@ -22,6 +29,18 @@ const About = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:type" content="profile" />
+        <meta
+          property="og:url"
+          content="https://jimuelbaraero.vercel.app/about"
+        />
+      </Helmet>
+
       <div className="container about-page">
         <div className="text-zone">
           <h1>

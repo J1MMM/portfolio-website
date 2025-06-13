@@ -5,6 +5,13 @@ import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import "leaflet/dist/leaflet.css";
+import { Helmet } from "react-helmet";
+
+const meta = {
+  title: "Contact – Jimuel Baraero",
+  description:
+    "Get in touch with Jimuel Baraero for web development collaborations, project inquiries, or freelance opportunities.",
+};
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -39,6 +46,18 @@ const Contact = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://jimuelbaraero.vercel.app/contact"
+        />
+      </Helmet>
+
       <div className="container contact-page">
         <div className="text-zone">
           <h1>

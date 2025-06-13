@@ -15,6 +15,7 @@ import jopay from "../../assets/images/jopay.png";
 import _3dball from "../../assets/images/3dball.png";
 import maze from "../../assets/images/maze.png";
 import yt2mp3 from "../../assets/images/yt2mp3.png";
+import { Helmet } from "react-helmet";
 
 const images = {
   quizzical,
@@ -27,6 +28,13 @@ const images = {
   maze,
   yt2mp3,
 };
+
+const meta = {
+  title: "Projects – Jimuel Baraero",
+  description:
+    "Explore web development projects by Jimuel Baraero, including government systems, educational platforms, and MERN stack applications.",
+};
+
 const Works = () => {
   const WorkArray = "My Works".split("");
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -103,6 +111,18 @@ const Works = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://jimuelbaraero.vercel.app/projects"
+        />
+      </Helmet>
+
       <div className="work-page">
         <div className="text-zone">
           <h1>
