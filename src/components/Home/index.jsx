@@ -5,6 +5,14 @@ import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import Loader from "react-loaders";
 import TagCloud from "TagCloud";
+import { Helmet } from "react-helmet";
+
+const meta = {
+  title: "Jimuel Baraero – Portfolio",
+  description:
+    "Portfolio site for Jimuel Baraero showcasing web development projects and contact information.",
+  image: "https://jimuelbaraero.vercel.app/favicon.ico",
+};
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -68,6 +76,15 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:image" content={meta.image} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <div className="container home-page">
         <div className="text-zone">
           <h1>
