@@ -11,7 +11,7 @@ function App() {
     title: "Jimuel Baraero – Portfolio",
     description:
       "Portfolio site for Jimuel Baraero showcasing web development projects and contact information.",
-    image: "https://jimuelbaraero.vercel.app/favicon.png",
+    image: "https://jimuelbaraero.vercel.app/favicon.ico",
   };
 
   return (
