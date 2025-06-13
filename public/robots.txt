@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /test-page/
-Sitemap: https://jimuelbaraero.vercel.app/sitemap.xml
+sitemap: https://jimuelbaraero.vercel.app/sitemap.xml
