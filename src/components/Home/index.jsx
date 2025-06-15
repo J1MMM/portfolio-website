@@ -90,6 +90,7 @@ const Home = () => {
           type="image/x-icon"
         />
         <meta property="og:type" content="website" />
+        <meta name="robots" content="NOODP" />
       </Helmet>
 
       <div className="container home-page">
