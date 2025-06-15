@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 function App() {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <script type="application/ld+json">
           {`
       {
@@ -29,7 +29,7 @@ function App() {
       }
     `}
         </script>
-      </Helmet>
+      </Helmet> */}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
