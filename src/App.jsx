@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>{meta.title}</title>
+        {/* <title>{meta.title}</title>
         <link href={meta.image} rel="icon" type="image/x-icon" />
         <meta name="description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
@@ -31,7 +31,7 @@ function App() {
           type="image/x-icon"
         />
         <meta property="og:type" content="website" />
-        <meta name="robots" content="NOODP" />
+        <meta name="robots" content="NOODP" /> */}
 
         <script type="application/ld+json">
           {`
