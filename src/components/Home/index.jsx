@@ -79,6 +79,7 @@ const Home = () => {
     <>
       <Helmet>
         <title>{meta.title}</title>
+        <link href={meta.image} rel="icon" type="image/x-icon" />
         <meta name="description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
