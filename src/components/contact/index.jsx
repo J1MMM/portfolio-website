@@ -54,7 +54,7 @@ const Contact = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://jimuelbaraero.vercel.app/contact"
+          content="https://jimuelbaraero.vercel.app/contacts"
         />
       </Helmet>
 

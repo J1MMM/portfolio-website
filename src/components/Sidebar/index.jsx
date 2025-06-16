@@ -35,7 +35,7 @@ const Sidebar = () => {
           onClick={() => setNavShow(!NavShow)}
           exact="true"
           activeclassname="active"
-          className="about-link"
+          className="home-link"
           to="/"
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4d" />
@@ -70,7 +70,7 @@ const Sidebar = () => {
           exact="true"
           activeclassname="active"
           className="contact-link"
-          to="contact"
+          to="contacts"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4d" />
         </NavLink>

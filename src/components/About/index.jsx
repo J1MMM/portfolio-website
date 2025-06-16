@@ -51,23 +51,26 @@ const About = () => {
             />
           </h1>
           <p className="long-text">
-            Hi! I'm a passionate Web Developer with a knack for creating
-            dynamic, user-friendly websites and applications. I specialize in
-            modern web technologies like HTML, CSS, JavaScript, and frameworks
-            such as React.js, Node.js, and Express. With a strong eye for design
-            and performance, I love turning complex problems into simple,
-            elegant solutions.
+            Hi! I’m a passionate Web Developer with a strong focus on creating
+            intuitive, responsive websites and web applications. I specialize in
+            modern technologies like{" "}
+            <span>
+              HTML, CSS, JavaScript, React.js, Node.js, Express, MongoDB, PHP,
+              and SQL
+            </span>
+            —crafting fast, clean, and user-friendly digital experiences.
           </p>
           <p className="long-text">
-            Over the years, I’ve built everything from responsive business sites
-            to full-stack web apps, always aiming to deliver seamless user
-            experiences and clean, maintainable code. Whether collaborating in
-            teams or working independently, I value clean architecture,
-            scalability, and staying up-to-date with the latest industry trends.
-            When I’m not coding, you’ll find me exploring new tech, contributing
-            to open-source, or diving into UI/UX design inspirations.
+            Over the years, I’ve developed websites, mobile apps, and games
+            through self-study—always aiming for{" "}
+            <span>clean code and smooth user interactions.</span> Whether
+            working independently or with a team, I focus on building scalable
+            and high-performing applications. I also enjoy exploring new tech
+            trends and learning about great UI/UX design.
           </p>
-          <p className="long-text">Let’s build something amazing together!</p>
+          <p className="long-text">
+            Ready to collaborate and build something awesome!
+          </p>
         </div>
         <div className="cube-cont">
           <div className="cube-spinner">
