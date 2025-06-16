@@ -7,8 +7,17 @@
     "image": "franchises",
     "sourceUrl": "https://github.com/J1MMM/spctmo-website.git"
   },
+
   {
     "id": 2,
+    "URL": "https://jimboi.infinityfreeapp.com/",
+    "title": "Jopay's Kitchen",
+    "description": "Jopay's Kitchen: An e-commerce platform simplifying your culinary experience by seamlessly processing customer orders.",
+    "image": "jopay",
+    "sourceUrl": "https://github.com/J1MMM/Online-Food-Ordering-System.git"
+  },
+  {
+    "id": 3,
     "URL": "https://ppp-learning-tool.vercel.app/",
     "title": "PPPEdu",
     "description": "Streamline teaching with PPPedu. Store lessons, manage student lists, and monitor progress in mobile games—all in one platform. Easy access, anytime, anywhere.",
@@ -16,15 +25,16 @@
     "sourceUrl": "https://github.com/J1MMM/ppp-learning-tool"
   },
   {
-    "id": 3,
+    "id": 4,
     "URL": "https://www.mediafire.com/file/y45umlcnui5uxsa/PPPKids.apk/file",
     "title": "PPPKids",
     "description": "Elevate learning with PPPKids! Fun and educational games for kids to enhance reading, writing, and math skills. Download now for an enriching experience.",
     "image": "pppkids",
     "sourceUrl": "https://github.com/J1MMM/pppkids"
   },
+
   {
-    "id": 4,
+    "id": 5,
     "URL": "https://playcanv.as/b/15d24659",
     "title": "3D Ball Adventure",
     "description": "An exhilarating and challenging arcade-style game that puts players in control of a ball navigating a complex platform filled with obstacles and traps. ",
@@ -32,7 +42,7 @@
     "sourceUrl": "https://playcanvas.com/project/1181262/overview/3d-ball-adventure"
   },
   {
-    "id": 5,
+    "id": 6,
     "URL": "https://launch.playcanvas.com/1861042?debug=true",
     "title": "A Maze",
     "description": "Navigate, solve, and play for a thrilling adventure. Ready to challenge yourself? Play now!",
@@ -40,7 +50,7 @@
     "sourceUrl": "https://playcanvas.com/project/1141013/overview/a-maze"
   },
   {
-    "id": 6,
+    "id": 7,
     "URL": "https://j1mmm.github.io/Quizzical",
     "title": "Quizzical",
     "description": "Quiz App that generate random questions with multiple choices depending on what categories you have selected",
@@ -48,7 +58,7 @@
     "sourceUrl": "https://github.com/J1MMM/Quizzical.git"
   },
   {
-    "id": 7,
+    "id": 8,
     "URL": "https://j1mmm.github.io/yt2mp3",
     "title": "YT2MP3",
     "description": "YouTube video to mp3 converter, Find and download videos you want.",
@@ -56,19 +66,11 @@
     "sourceUrl": "https://github.com/J1MMM/yt2mp3.git"
   },
   {
-    "id": 8,
+    "id": 9,
     "URL": "https://j1mmm.github.io/Tenzies-game",
     "title": "Tenzies game",
     "description": "Roll until all dice are the same. Click each die to freeze it at its current value between rolls.",
     "image": "tenzies",
     "sourceUrl": "https://github.com/J1MMM/Tenzies-game.git"
-  },
-  {
-    "id": 9,
-    "URL": "https://jopayskitchen.infinityfreeapp.com",
-    "title": "Jopay's Kitchen",
-    "description": "Jopay's Kitchen: An e-commerce platform simplifying your culinary experience by seamlessly processing customer orders.",
-    "image": "jopay",
-    "sourceUrl": "https://github.com/J1MMM/pppkids"
   }
 ]
