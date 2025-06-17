@@ -29,6 +29,50 @@ const images = {
   yt2mp3,
 };
 
+const settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  arrows: true,
+  autoplay: false,
+  speed: 500,
+  autoplaySpeed: 500,
+  cssEase: "linear",
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1201,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 4,
+      },
+    },
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
 const meta = {
   title: "Projects – Jimuel Baraero",
   description:
@@ -44,70 +88,31 @@ const Works = () => {
     }, 3000);
   }, []);
 
-  const projectElements = projects.map((item) => {
+  const cardsElements = projects.map((item, index) => {
     return (
-      <div key={item.id} className={`card card-${item.id}`}>
+      <div key={item.id} className={`card card-${index + 1}`}>
         <div className="card-control">
-          <div className="img-cont">
+          <div className="img-container">
             <img src={images[item.image]} />
           </div>
-          <div className="info-cont">
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-            <a href={item.URL} target="_blank">
-              Visit Project
-            </a>
-            <a className="source-btn" href={item.sourceUrl} target="_blank">
-              Source Code
-            </a>
+          <div className="overlay">
+            <div className="info-cont">
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+              <div className="button-container">
+                <a href={item.URL} target="_blank">
+                  Visit Project
+                </a>
+                <a href={item.sourceUrl} target="_blank">
+                  Source Code
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     );
   });
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    arrows: true,
-    autoplay: true,
-    speed: 500,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1201,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-        },
-      },
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <>
@@ -129,11 +134,11 @@ const Works = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={WorkArray}
-              idx={12}
+              idx={10}
             />
           </h1>
-          <div className="projects-cont">
-            <Slider {...settings}>{projectElements}</Slider>
+          <div className="cards-container">
+            <Slider {...settings}>{cardsElements}</Slider>
           </div>
         </div>
       </div>
