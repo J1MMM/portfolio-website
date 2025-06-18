@@ -5,14 +5,13 @@
     "title": "Management System",
     "description": "React, Material UI, Express, MongoDB",
     "image": "franchises",
-    "sourceUrl": "https://github.com/J1MMM/spctmo-website.git"
+    "sourceUrl": "https://github.com/J1MMM/spctmo-demo.git"
   },
-
   {
     "id": 2,
     "URL": "https://jimboi.infinityfreeapp.com/",
     "title": "Ecommerce Website",
-    "description": "HTML, CSS, JavaScipt, PHP and MySql",
+    "description": "HTML, CSS, JavaScipt, PHP, MySql and Google Sign-In",
     "image": "jopay",
     "sourceUrl": "https://github.com/J1MMM/Online-Food-Ordering-System.git"
   },
@@ -20,7 +19,7 @@
     "id": 3,
     "URL": "https://ppp-learning-tool.vercel.app/",
     "title": "PPPEdu",
-    "description": "HTML, CSS, JavaScipt, PHP and MySql",
+    "description": "React, Material UI, Express, MongoDB and Firebase Storage",
     "image": "pppedu",
     "sourceUrl": "https://github.com/J1MMM/ppp-learning-tool"
   },
@@ -28,7 +27,7 @@
     "id": 4,
     "URL": "https://www.mediafire.com/file/y45umlcnui5uxsa/PPPKids.apk/file",
     "title": "PPPKids",
-    "description": "React Native, Express, MongDB",
+    "description": "React Native, Expo, Express and MongDB",
     "image": "pppkids",
     "sourceUrl": "https://github.com/J1MMM/pppkids"
   },
@@ -53,7 +52,7 @@
     "id": 7,
     "URL": "https://j1mmm.github.io/Quizzical",
     "title": "Quizzical",
-    "description": "React JS",
+    "description": "React JS, Open Trivia API",
     "image": "quizzical",
     "sourceUrl": "https://github.com/J1MMM/Quizzical.git"
   },
@@ -61,7 +60,7 @@
     "id": 8,
     "URL": "https://j1mmm.github.io/yt2mp3",
     "title": "YT2MP3",
-    "description": "React JS",
+    "description": "React JS, Youtube API",
     "image": "yt2mp3",
     "sourceUrl": "https://github.com/J1MMM/yt2mp3.git"
   },

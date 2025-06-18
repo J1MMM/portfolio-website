@@ -97,15 +97,17 @@ const Works = () => {
           </div>
           <div className="overlay">
             <div className="info-cont">
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-              <div className="button-container">
-                <a href={item.URL} target="_blank">
-                  Visit Project
-                </a>
-                <a href={item.sourceUrl} target="_blank">
-                  Source Code
-                </a>
+              <div className="text-overlay">
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+                <div className="button-container">
+                  <a href={item.URL} target="_blank">
+                    Visit Project
+                  </a>
+                  <a href={item.sourceUrl} target="_blank">
+                    Source Code
+                  </a>
+                </div>
               </div>
             </div>
           </div>
